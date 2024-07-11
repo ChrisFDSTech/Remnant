@@ -15,7 +15,22 @@ $filesPath = Join-Path -Path $directoryPath -ChildPath "Files"
 $zipPath = Join-Path -Path $filesPath -ChildPath "Boston Post Installer.zip.001"
 
 # Define the GitHub URLs for the files
-$bpFiles = "https://github.com/ChrisFDSTech/Remnant/tree/main/BostonPost/Files"
+$bpFiles1 = "https://github.com/ChrisFDSTech/Remnant/blob/main/BostonPost/Files/Boston%20Post%20Installer.zip.001"
+$bpFiles2 = "https://github.com/ChrisFDSTech/Remnant/blob/main/BostonPost/Files/Boston%20Post%20Installer.zip.002"
+$bpFiles3 = "https://github.com/ChrisFDSTech/Remnant/blob/main/BostonPost/Files/Boston%20Post%20Installer.zip.003"
+$bpFiles4 = "https://github.com/ChrisFDSTech/Remnant/blob/main/BostonPost/Files/Boston%20Post%20Installer.zip.004"
+$bpFiles5 = "https://github.com/ChrisFDSTech/Remnant/blob/main/BostonPost/Files/Boston%20Post%20Installer.zip.005"
+$bpFiles6 = "https://github.com/ChrisFDSTech/Remnant/blob/main/BostonPost/Files/Boston%20Post%20Installer.zip.006"
+$bpFiles7 = "https://github.com/ChrisFDSTech/Remnant/blob/main/BostonPost/Files/Boston%20Post%20Installer.zip.007"
+$bpFiles8 = "https://github.com/ChrisFDSTech/Remnant/blob/main/BostonPost/Files/Boston%20Post%20Installer.zip.008"
+$bpFiles9 = "https://github.com/ChrisFDSTech/Remnant/blob/main/BostonPost/Files/Boston%20Post%20Installer.zip.009"
+$bpFiles10 = "https://github.com/ChrisFDSTech/Remnant/blob/main/BostonPost/Files/Boston%20Post%20Installer.zip.010"
+$bpFiles11 = "https://github.com/ChrisFDSTech/Remnant/blob/main/BostonPost/Files/Boston%20Post%20Installer.zip.011"
+$bpFiles12 = "https://github.com/ChrisFDSTech/Remnant/blob/main/BostonPost/Files/Boston%20Post%20Installer.zip.012"
+$bpFiles13 = "https://github.com/ChrisFDSTech/Remnant/blob/main/BostonPost/Files/Boston%20Post%20Installer.zip.013"
+$bpFiles14 = "https://github.com/ChrisFDSTech/Remnant/blob/main/BostonPost/Files/Boston%20Post%20Installer.zip.014"
+$bpFiles15 = "https://github.com/ChrisFDSTech/Remnant/blob/main/BostonPost/Files/Boston%20Post%20Installer.zip.015"
+$bpFiles16 = "https://github.com/ChrisFDSTech/Remnant/blob/main/BostonPost/Files/Boston%20Post%20Installer.zip.016"
 
 # Start logging if any part of the process fails
 $logPath = "C:\FDSLogs"
@@ -44,13 +59,28 @@ if (-not (Test-Path $directoryPath)) {
 }
 
 
-# Download Zip file from GitHub to the FDS Directory
-Write-Host "Downloading icon file from: $bpFiles"
+# Download Zip files from GitHub to the FDS Directory
+Write-Host "Downloading icon files from: GitHub
 try {
-    Invoke-WebRequest -Uri $bpFiles -OutFile (Join-Path -Path $directoryPath -ChildPath "Files")
+        Invoke-WebRequest -Uri $bpFiles1 -OutFile (Join-Path -Path $filePath)
+        Invoke-WebRequest -Uri $bpFiles2 -OutFile (Join-Path -Path $filePath)
+        Invoke-WebRequest -Uri $bpFiles3 -OutFile (Join-Path -Path $filePath)
+        Invoke-WebRequest -Uri $bpFiles4 -OutFile (Join-Path -Path $filePath)
+        Invoke-WebRequest -Uri $bpFiles5 -OutFile (Join-Path -Path $filePath)
+        Invoke-WebRequest -Uri $bpFiles6 -OutFile (Join-Path -Path $filePath)
+        Invoke-WebRequest -Uri $bpFiles7 -OutFile (Join-Path -Path $filePath)
+        Invoke-WebRequest -Uri $bpFiles8 -OutFile (Join-Path -Path $filePath)
+        Invoke-WebRequest -Uri $bpFiles9 -OutFile (Join-Path -Path $filePath)
+        Invoke-WebRequest -Uri $bpFiles10 -OutFile (Join-Path -Path $filePath)
+        Invoke-WebRequest -Uri $bpFiles11 -OutFile (Join-Path -Path $filePath)
+        Invoke-WebRequest -Uri $bpFiles12 -OutFile (Join-Path -Path $filePath)
+        Invoke-WebRequest -Uri $bpFiles13 -OutFile (Join-Path -Path $filePath)
+        Invoke-WebRequest -Uri $bpFiles14 -OutFile (Join-Path -Path $filePath)
+        Invoke-WebRequest -Uri $bpFiles15 -OutFile (Join-Path -Path $filePath)
+        Invoke-WebRequest -Uri $bpFiles16 -OutFile (Join-Path -Path $filePath)
 }
 catch {
-    Write-Warning "Failed to download icon file from: $bpFiles"
+    Write-Warning "Failed to download zipped files from: GitHub"
 }
 
 # Exract contents of zip file

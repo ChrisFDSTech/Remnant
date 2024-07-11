@@ -62,22 +62,22 @@ if (-not (Test-Path $directoryPath)) {
 # Download Zip files from GitHub to the FDS Directory
 Write-Host "Downloading icon files from: GitHub
 try {
-        Invoke-WebRequest -Uri $bpFiles1 -OutFile (Join-Path -Path $filePath)
-        Invoke-WebRequest -Uri $bpFiles2 -OutFile (Join-Path -Path $filePath)
-        Invoke-WebRequest -Uri $bpFiles3 -OutFile (Join-Path -Path $filePath)
-        Invoke-WebRequest -Uri $bpFiles4 -OutFile (Join-Path -Path $filePath)
-        Invoke-WebRequest -Uri $bpFiles5 -OutFile (Join-Path -Path $filePath)
-        Invoke-WebRequest -Uri $bpFiles6 -OutFile (Join-Path -Path $filePath)
-        Invoke-WebRequest -Uri $bpFiles7 -OutFile (Join-Path -Path $filePath)
-        Invoke-WebRequest -Uri $bpFiles8 -OutFile (Join-Path -Path $filePath)
-        Invoke-WebRequest -Uri $bpFiles9 -OutFile (Join-Path -Path $filePath)
-        Invoke-WebRequest -Uri $bpFiles10 -OutFile (Join-Path -Path $filePath)
-        Invoke-WebRequest -Uri $bpFiles11 -OutFile (Join-Path -Path $filePath)
-        Invoke-WebRequest -Uri $bpFiles12 -OutFile (Join-Path -Path $filePath)
-        Invoke-WebRequest -Uri $bpFiles13 -OutFile (Join-Path -Path $filePath)
-        Invoke-WebRequest -Uri $bpFiles14 -OutFile (Join-Path -Path $filePath)
-        Invoke-WebRequest -Uri $bpFiles15 -OutFile (Join-Path -Path $filePath)
-        Invoke-WebRequest -Uri $bpFiles16 -OutFile (Join-Path -Path $filePath)
+        Invoke-WebRequest -Uri $bpFiles1 -OutFile $filesPath
+        Invoke-WebRequest -Uri $bpFiles2 -OutFile $filesPath
+        Invoke-WebRequest -Uri $bpFiles3 -OutFile $filesPath
+        Invoke-WebRequest -Uri $bpFiles4 -OutFile $filesPath
+        Invoke-WebRequest -Uri $bpFiles5 -OutFile $filesPath
+        Invoke-WebRequest -Uri $bpFiles6 -OutFile $filesPath
+        Invoke-WebRequest -Uri $bpFiles7 -OutFile $filesPath
+        Invoke-WebRequest -Uri $bpFiles8 -OutFile $filesPath
+        Invoke-WebRequest -Uri $bpFiles9 -OutFile $filesPath
+        Invoke-WebRequest -Uri $bpFiles10 -OutFile $filesPath
+        Invoke-WebRequest -Uri $bpFiles11 -OutFile $filesPath
+        Invoke-WebRequest -Uri $bpFiles12 -OutFile $filesPath
+        Invoke-WebRequest -Uri $bpFiles13 -OutFile $filesPath
+        Invoke-WebRequest -Uri $bpFiles14 -OutFile $filesPath
+        Invoke-WebRequest -Uri $bpFiles15 -OutFile $filesPath
+        Invoke-WebRequest -Uri $bpFiles16 -OutFile $filesPath
 }
 catch {
     Write-Warning "Failed to download zipped files from: GitHub"

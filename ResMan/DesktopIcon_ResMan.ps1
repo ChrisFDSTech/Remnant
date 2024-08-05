@@ -10,7 +10,7 @@ $directoryName = "FDS\Icons"
 $directoryPath = Join-Path -Path $env:ProgramData -ChildPath $directoryName
 
 # Define the Shortcut Info
-$WebAddress = "https://www.remnant.myresman.com"
+$WebAddress = "remnant.myresman.com"
 $ShortcutName = "ResMan.lnk"
 $ShortcutPath = Join-Path -Path ([Environment]::GetFolderPath("CommonDesktopDirectory")) -ChildPath $ShortcutName
 
